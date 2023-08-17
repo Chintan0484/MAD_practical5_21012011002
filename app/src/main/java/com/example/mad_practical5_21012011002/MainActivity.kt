@@ -1,19 +1,18 @@
 package com.example.mad_practical5_21012011002
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Camera
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
-import android.provider.Browser
 import android.provider.CallLog
 import android.provider.MediaStore
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Gallery
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,10 +22,35 @@ class MainActivity : AppCompatActivity() {
 
             Browser(editBrowser.text.toString())
         }
-        val call : Button
+        val btnCall:Button = findViewById(R.id.btnCall)
+        val editCall:EditText=findViewById(R.id.editTextPhone)
+        btnCall.setOnClickListener(){
+            call(editCall.text.toString())
+        }
+        val btnCallLog:Button=findViewById(R.id.btnCallLog)
+        btnCallLog.setOnClickListener(){
+            call(editCall.text.toString())
+        }
+        val gallery:Button=findViewById(R.id.btnGallery)
+        gallery.setOnClickListener(){
+            Gallery()
+        }
+        val Camera:Button=findViewById(R.id.btnCamera)
+        Camera.setOnClickListener(){
+            Camera()
+        }
+        val Alarm:Button=findViewById(R.id.btnalarm)
+        Alarm.setOnClickListener(){
+            Alarm()
+        }
 
 
     }
+
+    private fun call(toString: String) {
+
+    }
+
     fun Browser(url : String){
         Intent(Intent.ACTION_VIEW, Uri.parse(url)).also { startActivity(it) }
     }

@@ -87,7 +87,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="232dp"
+        android:layout_marginEnd="220dp"
         android:text="Call Log:"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnCallLog"
         app:layout_constraintEnd_toStartOf="@+id/btnCallLog"
@@ -98,7 +98,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="28dp"
         android:text="Gallery:"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnGallery"
         app:layout_constraintStart_toStartOf="parent" />
@@ -114,45 +114,44 @@
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/btnCallLog" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Camera:"
-        app:layout_constraintEnd_toStartOf="@+id/btmCamera"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="356dp" />
-
     <Button
-        android:id="@+id/btmCamera"
+        android:id="@+id/btnCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
         android:text="Camera"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/btnGallery" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnalarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Alarm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Camera:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCamera"
+        app:layout_constraintEnd_toStartOf="@+id/btnCamera"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:text="Alarm:"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="443dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnalarm"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
