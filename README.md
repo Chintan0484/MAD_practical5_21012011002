@@ -18,7 +18,8 @@ AIM: What is Intent? Write down types of Intent and types of Intent Action. Crea
 
 ![image](https://github.com/Chintan0484/MAD_practical5_21012011002/assets/98694412/f16e3bad-558e-45d4-ae8b-7cfc81b33f5a)
 
-![image](https://github.com/Chintan0484/MAD_practical5_21012011002/assets/98694412/ba0f55d5-b77e-4c6d-a78b-d8925f73fa0e)
+![image](https://github.com/Chintan0484/MAD_practical5_21012011002/assets/98694412/9514f58c-b78d-4f78-abc8-601749b5143b)
+
 
 ![image](https://github.com/Chintan0484/MAD_practical5_21012011002/assets/98694412/b5b03beb-e8b3-47a0-a2af-a2eedb49e770)
 
